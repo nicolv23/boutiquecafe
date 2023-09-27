@@ -1,0 +1,61 @@
+﻿@model Commande
+
+    <form asp-action="Paiement" method="post" role="form">
+        <section data-bs-version="5.1" class="form6 cid-tsFfsp7eqK" id="form6-n">
+
+            <div class="container">
+                <div class="mt-5">
+                    <!-- Checkout Panel Information-->
+                    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-4">
+                        <h3 class="fs-5 fw-bolder m-0 lh-1">Adresse de livraison</h3>
+                    </div>
+                    <div class="row">
+                        <!-- First Name-->
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label asp-for="Prenom" class="form-label">Prénom</label>
+                                <input asp-for="Prenom" type="text" class="form-control" placeholder="" value="" required="">
+                            </div>
+                        </div>
+
+                        <!-- Last Name-->
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label asp-for="Nom" class="form-label">Nom de famille</label>
+                                <input asp-for="Nom" type="text" class="form-control" placeholder="" value="" required="">
+                            </div>
+                        </div>
+
+                        <!-- Email-->
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label asp-for="Email" class="form-label">Email</label>
+                                <input type="Email" type="email" class="form-control" asp-for="Email" placeholder="">
+                            </div>
+                        </div>
+                        <!-- Phone-->
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label asp-for="Numero" class="form-label">Téléphone</label>
+                                <input type="Numero" type="tel" class="form-control" asp-for="Numero" placeholder="">
+                            </div>
+                        </div>
+                        <!-- Address-->
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label asp-for="Adresse" class="form-label">Adresse</label>
+                                <input type="Adresse" type="text" class="form-control" asp-for="Adresse" placeholder="123 Rue Desjardins"></input>
+                            </div>
+                        </div>
+                        <!-- Address-->
+                    </div>
+
+                    <div class="col-auto mbr-section-btn align-center">
+                        <button type="submit" class="btn btn-primary display-4">Effectuer commande</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </form>
+   
